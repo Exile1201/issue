@@ -1,4 +1,4 @@
-#include <iotream>
+#include <iostream> // fixed the mispelling
 #include <iomanip>
 #include "Point.h"
 #include "Rectangle.h"
@@ -37,7 +37,7 @@ int main() {
     cout << "Distance from the origin to point 1: " << fixed << setprecision(2)
         << point1.calculateDistanceFromOrigin() << endl;
     cout << "Distance from the origin to point 2: " << fixed << setprecision(2)
-        << point2.calculateDistanceFromOrigin() << endl
+        << point2.calculateDistanceFromOrigin() << endl; // needed a ;
 
     // Call calculateArea and calculatePerimeter functions on Rectangle objects
     cout << "First rectangle area: " << fixed << setprecision(2)
